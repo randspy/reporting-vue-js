@@ -19,6 +19,8 @@
     --secondary-foreground: var(--deep-navy-blue);
     --accent: var(--tangerine);
     --error: var(--red);
+
+    --radius: 0.5rem;
   }
 }
 
