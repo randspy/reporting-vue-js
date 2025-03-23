@@ -3,20 +3,20 @@ import PageReporting from '@/features/reporting/components/ReportingsPage.vue'
 import PageNewReporting from '@/features/reporting/components/NewReportingPage.vue'
 import MainLayout from '@/layout/MainLayout.vue'
 import PageNotFound from '@/layout/PageNotFound.vue'
-import { ReportingRoute } from './routes.config'
+import { DefaultRoute } from './routes.config'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      redirect: ReportingRoute,
+      redirect: DefaultRoute,
     },
     {
       path: '/app',
       name: 'app',
       component: MainLayout,
-      redirect: ReportingRoute,
+      redirect: DefaultRoute,
       children: [
         {
           path: 'reporting',
